@@ -2,7 +2,7 @@ package cc.isotopestudio.treasure.util;
 
 import org.bukkit.ChatColor;
 
-import static cc.isotopestudio.shulkergun.ShulkerGun.prefix;
+import static cc.isotopestudio.treasure.Treasure.prefix;
 
 /*
  * Created by Mars on 5/15/2016.

@@ -1,5 +1,6 @@
 package cc.isotopestudio.treasure;
 
+import cc.isotopestudio.treasure.cmd.CommandTreasure;
 import cc.isotopestudio.treasure.listener.MapListener;
 import cc.isotopestudio.treasure.util.PluginFile;
 import org.bukkit.Bukkit;
@@ -10,16 +11,21 @@ public class Treasure extends JavaPlugin {
 
     private static final String pluginName = "Treasure";
     public static final String prefix = (new StringBuilder()).append(ChatColor.GOLD).append(ChatColor.BOLD).append("[")
-            .append("Treasure").append("]").append(ChatColor.RED).toString();
+            .append("²Ø±¦Í¼").append("]").append(ChatColor.RED).toString();
 
     public static Treasure plugin;
 
+    public static PluginFile config;
     public static PluginFile mapData;
 
     @Override
     public void onEnable() {
         plugin = this;
+        config = new PluginFile(this, "config.yml","config.yml");
+        config.setEditable(false);
         mapData = new PluginFile(this, "map.yml");
+
+        TreasureMap.init();
 
         this.getCommand("treasure").setExecutor(new CommandTreasure());
 
@@ -32,6 +38,7 @@ public class Treasure extends JavaPlugin {
 
     public void onReload() {
         mapData.reload();
+        TreasureMap.init();
     }
 
     @Override
