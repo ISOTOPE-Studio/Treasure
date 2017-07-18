@@ -1,0 +1,13 @@
+name: Treasure
+main: cc.isotopestudio.treasure.Treasure
+
+author: Mars
+description: 
+website: http://isotopestudio.cc
+version: 1.0.0
+
+commands:
+  treasure:
+    description: Treasure
+    usage: /<command>
+    aliases: [tm]
