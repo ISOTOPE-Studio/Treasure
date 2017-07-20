@@ -4,7 +4,7 @@ main: cc.isotopestudio.treasure.Treasure
 author: Mars
 description: 
 website: http://isotopestudio.cc
-version: 1.1
+version: 1.2
 
 commands:
   treasure:

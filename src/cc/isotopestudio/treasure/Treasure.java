@@ -37,6 +37,7 @@ public class Treasure extends JavaPlugin {
     }
 
     public void onReload() {
+        config.reload();
         mapData.reload();
         TreasureMap.init();
     }

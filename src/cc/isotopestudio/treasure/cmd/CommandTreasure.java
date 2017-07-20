@@ -32,7 +32,7 @@ public class CommandTreasure implements CommandExecutor {
                 sender.sendMessage(S.toYellow("/" + label + " setpos <ID> - 设置当前位置为藏宝图地点"));
                 sender.sendMessage(S.toYellow("/" + label + " reward <ID> <几率> - 将手上物品添加至藏宝图奖励"));
                 sender.sendMessage(S.toYellow("/" + label + " give <ID> [player] [数量] - 给与玩家藏宝图"));
-                sender.sendMessage(S.toYellow("/" + label + " list - 给与玩家藏宝图"));
+                sender.sendMessage(S.toYellow("/" + label + " list - 藏宝图列表"));
                 sender.sendMessage(S.toYellow("/" + label + " reload - 重载配置文件"));
                 return true;
             }
